@@ -93,7 +93,6 @@ namespace Haro.Manager
 
         public void CloseAllPanel()
         {
-            // 반복문 안에서의 리스트 요소 삭제 처리.
             List<BasePanel> tmpOpenedPanelList = openedPanelList.ToList();
             foreach (BasePanel panel in tmpOpenedPanelList)
             {
@@ -131,7 +130,6 @@ namespace Haro.Manager
             return false;
         }
 
-        // 추후 팝업 관련 기능 통합시 사용 예정
         public void OpenPopup<T>(object data = null) where T : BasePopup
         {
             foreach (BasePopup popup in UIPopupList)

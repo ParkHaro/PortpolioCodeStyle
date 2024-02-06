@@ -35,8 +35,8 @@ namespace Haro.Manager
         
         [ReadOnly][SerializeField] private List<BasePanel> uiPanelList = new();
         [ReadOnly][SerializeField] private List<BasePanel> openedPanelList = new();
-        [ReadOnly][SerializeField] List<BasePopup> uiPopupList = new();
-        [ReadOnly][SerializeField] List<BasePopup> openedPopupList = new();
+        [ReadOnly][SerializeField] private List<BasePopup> uiPopupList = new();
+        [ReadOnly][SerializeField] private List<BasePopup> openedPopupList = new();
 
         [Button]
         public T OpenPanel<T>(object data = null, UnityAction done = null) where T : BasePanel
